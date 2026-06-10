@@ -33,7 +33,7 @@ def response_generator() :
 
 # Dislay assistant response in chat message container
 with st.chat_message("assistant") :
- response = st.write_stream(response_genrator())
+ response = st.write_stream(response_generator())
 
 # Add assitant response to chat history
 st.session_state.messages.append({"role": "assostant", "content": response})
