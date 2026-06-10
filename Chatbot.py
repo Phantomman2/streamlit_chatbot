@@ -23,7 +23,8 @@ def response_generator() :
     [
       "Hello there! How can i assit uou today?",
       "Hi, human! Is there amything i can help you with?",
-      Do you need help?"
+      "Do you need help",
+    
     ]
   )
   for word in response.split():
