@@ -5,9 +5,10 @@ st.title("simple chat")
 # intitialize chat history
 if "messages" not in st.session_state:
   st.session_state.messages=[]
-  # Display chat messages from history on app rerun for message in st.session_stste.messages:
-  with st.chat_messsage(message["role"]):
-    st.markdown(message["content"])
+  # Display chat messages from history on app rerun 
+  for message in st.session_stste.messages:
+    with st.chat_messsage(message["role"]):
+      st.markdown(message["content"])
 
 # Accept user input
 if propmt := st.chat_input("what is up") : 
@@ -24,7 +25,6 @@ def response_generator() :
       "Hello there! How can i assit uou today?",
       "Hi, human! Is there amything i can help you with?",
       "Do you need help",
-    
     ]
   )
   for word in response.split():
