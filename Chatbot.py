@@ -18,7 +18,7 @@ if prompt := st.chat_input("what is up") :
     st.markdown(prompt)
     
     # Add user message to chat history
-    st.session_state.message.append({"role": "user", "content": prompt})
+    st.session_state.messages.append({"role": "user", "content": prompt})
 
 # streamed response emulator
 def response_generator() :
