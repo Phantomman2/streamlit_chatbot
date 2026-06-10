@@ -12,7 +12,7 @@ if "messages" not in st.session_state:
       st.markdown(message["content"])
 
 # Accept user input
-if propmt := st.chat_input("what is up") : 
+if prompt := st.chat_input("what is up") : 
   # Displau user messahe in chat message container
   with st.chat_message("user") :
     st.markdown(prompt)
@@ -24,7 +24,7 @@ if propmt := st.chat_input("what is up") :
 def response_generator() :
   response = random.choice(
     [
-      "Hello there! How can i assit uou today?",
+      "Hello there! How can i assit you today?",
       "Hi, human! Is there amything i can help you with?",
       "Do you need help",
     ]
